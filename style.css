@@ -3,27 +3,37 @@ body {
   }
 
 p {
+  font-size: 30px;
+  font-family: cursive;
   padding: 10px;
   text-align: right;
   color: white;
-  border: 1px solid rgb(59, 47, 47);
-  background-color: hsla(240, 3%, 38%, 0.445);
+  border: 1px solid cyan;
+  background-color: black;
 }
 
 /* direct targeting of specific html code*/
 body nav {
-  text-align: right;
+  text-align: center;
 }
 
 /* the box and border box allow us to change the way an element looks*/
 .box {
   width: auto;
   padding: 0px;
-  border: 1px solid navy;
+  border: .2px solid cyan;
+  margin: auto;
+  text-align: center;
+}
+
+.box-two {
+  width: auto;
+  padding: 0px;
+  border: 1px solid black;
   margin: 10px;
   text-align: center;
-
 }
+
 
 .border-box {
   box-sizing: border-box;
@@ -33,7 +43,7 @@ body nav {
 h1 {
   font-family: futura;
   opacity: 60%;
-  color: red;
+  color: hsl(177, 91%, 55%);
   font-size: 50px;
   text-align: center;
 }
@@ -43,11 +53,11 @@ h2 {
   font-size: 20px;
 }
 
-body article h2 {
+body main article h1 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   opacity: 60%;
   text-align: center;
-  color: red;
+  color: cyan;
   font-size: 100px;
 }
 
@@ -61,12 +71,13 @@ h3::before {
   border-radius: 50%;
   background-color: grey;
   opacity: 50%;
-  color: red;
+  color: hsl(177, 91%, 55%);
   content: "W";
   font-size: 100px;
 }
 
 h4 {
+  text-align: right;
   font-family: 'Times New Roman', Times, serif;
   color: white;
   font-size: 30px;
@@ -77,8 +88,20 @@ h5 {
   text-align: center;
 }
 
+h6{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+
 p2{
+  font-size: 30px;
   font-family: cursive;
+  color: white;
+}
+
+p3 {
+  text-align: center;
   color: white;
 }
 
@@ -96,7 +119,7 @@ ul {
 
 /* the a section must be ordered correctly and dictates the way links act/react*/
 a:link{
-  color:red;
+  color: whitesmoke;
 }
 
 a:visited{
