@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><html lang="en">
 
 <!-- The head is responsible for letting the brower know how to handle the content and
 referncing any files that need to run before the rest of the program, so that it runs  properly.
@@ -7,7 +6,7 @@ Text encoding, viewport dimensions on certain devices, etc. -->
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>First Web Page</title>
+    <title>"First Web Page"</title>
       <link
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         rel="stylesheet"
@@ -19,30 +18,34 @@ Text encoding, viewport dimensions on certain devices, etc. -->
 <!-- This is where the actual content that will be displayed is held. In the body and footer -->
   <body>
     <header>
-        <img src="ThinkImages/creation.jpg" class="center box border-box"> <!-- starting the page with a photo as the header-->
+        <img src="ThinkImages/shadows.jpg" alt="grayscale image of self" class="center box-2 border-box"> <!-- starting the page with a photo as the header-->
     </header>
 
 <!-- nav bar to quickly and easily jump to a section of the page-->
         <nav>
-          <a href="#homePage">Home</a>
-          <a href="#aboutMe">About Me</a>
-          <a href="#contacts">Contact Me</a>
+          <a href="#homePage" target="_blank">Home</a>
+          <a href="#aboutMe" target="_blank">About Me</a>
+          <a href="#contacts" target="_blank">Contact Me</a>
         </nav>
 
 <!--after the header we see a welcom message. Used ::before method to stylize it-->
   <main>
-     <h3>elcome to...</h3>
-      <article>
-        <h2> My First Webpage</h2>
-      </article>
-     <h4>Enjoy!</h4>
+
 
 <!-- section was used to link the hypertext-referencing to the content-->
   <div>
-    <section id="homePage" >
-
+    <section id="homePage">"Self"
+      <h3>elcome to...</h3>
+       <article>
+         <h1> My First Webpage</h1>
+       </article>
+      <h4>Enjoy!</h4>
                 <!-- the image was put inside of a box with a border that we changed to a circle with the border-radius rule -->
-         <img src="ThinkImages/shadows.jpg" class="box center border-box"><p> Hello, and welcome! This, as the title states, is my first go at creating a webpage using JavaScript, HTML and CSS. I have included details and images that may help you get to know who I am a little more. Take your shoes off and have a look around.
+         <img src="ThinkImages/creation.jpg" alt="creative process visualized artistically" class="box center border-box">
+         <p>
+           Hello, and welcome! This, as the title states, is my first go at creating a webpage using JavaScript, HTML and CSS.
+           I have included details and images that may help you get to know who I am a little more.
+           So, go ahead and take your shoes off and have a look around.
          </p>
     </section>
   </div>
@@ -50,22 +53,19 @@ Text encoding, viewport dimensions on certain devices, etc. -->
 <hr> <!-- Horizontal rule to add style and organization.-->
 
 <!-- my art with alt for the description-->
-  <div>
-    <img src="ThinkImages/theEye.jpg" class="center" alt="Something that I made. An eye upclose mostly drawn and shaded with number 2 pencil and left monochromatic except the iris. Which is painted in watercolor to depict the Universe bursting into existence with vibrant colors.">
-    <h5>Art that I created</h5>
-  </div>
-<br>
 
   <section id="aboutMe">
        <h2>About Me</h2>
-
+       <div>
+         <img src="ThinkImages/theEye.jpg" class="center" alt="Something that I made. An eye upclose mostly drawn and shaded with number 2 pencil and left monochromatic except the iris. Which is painted in watercolor to depict the Universe bursting into existence with vibrant colors.">
+         <h5>Art that I created</h5>
+       </div>
+     <br>
       <p2>
-        Hello, my name is Kouma. I live in NEPA(North East Pennsylvania). I am sort of a loner but I get along with people easily,
-        if they are respectful. If not, I tend to just go the other way and avoid further contact.
-         This is where I, usually, focus on self-growth and perfecting my crafts of choice.
+        My name is Kouma. I live in NEPA(North East Pennsylvania). I get along with people easily and love to collaborate. I focus on self-growth and perfecting my crafts of choice.
          I really like to learn whenever possible. I have been learning some other languages but am nowhere near a working level with them.
-         That is why I am excited to have come across this amazing opportunity to advance my skillset and change careers! <br><hr><br>Aside from that I like to:
-      </p2>
+         That is why I am excited to have come across this amazing opportunity to advance my skillset and change careers!</p2><br><br>
+         <p3>Aside from that I like to:</p3>
   </section>
 
 <!-- an unordered list used since these have no level of importance, except the TV part. That's where i used an ordered list-->
@@ -84,23 +84,23 @@ Text encoding, viewport dimensions on certain devices, etc. -->
 
   </main>
 
+<hr>
 
 <!--this allows us to call our JavaScript page-->
 
     <script src="script.js"></script>
 
-  </body>
-<br>  <!-- a break to make things line up-->
-  <footer>
+  </body><br>  <!-- a break to make things line up-->
+  <footer class="box">
         <section id="contacts">
-          <h4>Contacts</h4>
+          <h6>Contacts</h6>
             <a href="https://www.linkedin.com/in/kouma-durbin-140176183">LinkedIn</a>
             <a href="https://github.com/kdurbi">GitHub</a>
         </section>
     <br>
-        <hr>
+
     <br>
     © Copyright Reserved
   </footer>
-  <br>
+
 </html>
